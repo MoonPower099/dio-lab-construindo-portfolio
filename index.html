@@ -1,342 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas Saramento Brandão | Portfólio para o Lab da DIO</title>
-  <meta name="description" content="Portfólio do desenvolvedor front-end Lucas Saramento Brandão para compartilhar projetos e habilidades desenvolvidas.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Saramento Brandão | Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio do desenvolvedor front-end Lucas Saramento Brandão para compartilhar projetos e habilidades."
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li><a class="menu__link active" href="#home">Home</a></li>
+          <li><a class="menu__link" href="#projetos">Projetos</a></li>
+          <li><a class="menu__link" href="#sobre">Sobre</a></li>
+          <li><a class="menu__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sun"></i>
+      </div>
+    </header>
 
-<body>
-  <!-- ======= Cabeçalho ======= -->
-  <header class="header">
-    <nav class="header__nav">
-      <ul class="menu menu--principal">
-        <li class="menu__item"><a class="menu__link active" href="#home"><span class="menu__text">Home</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="#projetos"><span class="menu__text">Projetos</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="#sobre"><span class="menu__text">Sobre</span></a></li>
-        <li class="menu__item"><a class="menu__link" href="#contato"><span class="menu__text">Contato</span></a></li>
+    <!-- ===== MENU MOBILE ===== -->
+    <nav class="nav--mobile">
+      <ul class="menu menu--mobile">
+        <li><a class="menu__link active" href="#home"><i class="bi bi-house-door"></i><span>Home</span></a></li>
+        <li><a class="menu__link" href="#projetos"><i class="bi bi-window-stack"></i><span>Projetos</span></a></li>
+        <li><a class="menu__link" href="#sobre"><i class="bi bi-person"></i><span>Sobre</span></a></li>
+        <li><a class="menu__link" href="#contato"><i class="bi bi-envelope"></i><span>Contato</span></a></li>
       </ul>
     </nav>
 
-    <div class="header__brand"></div>
-    <div class="header__toggle">
-      <i id="toggleTheme" class="bi bi-sun"></i>
-    </div>
-  </header>
+    <!-- ===== MAIN ===== -->
+    <main id="home">
+      <div class="main__content1">
+        <h1><b>Projetos Divertidos &</b> Desenvolvimento Front-end</h1>
+        <p>Lucas Saramento Brandão, Camboriú-SC, Desenvolvedor Front-end.</p>
 
-  <!-- ======= Navegação Mobile ======= -->
-  <nav class="nav--mobile">
-    <ul class="menu menu--mobile">
-      <li class="menu__item">
-        <a class="menu__link active" href="#home">
-          <i class="menu__icon bi bi-house-door"></i>
-          <span class="menu__text">Home</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#projetos">
-          <i class="menu__icon bi bi-window-stack"></i>
-          <span class="menu__text">Projetos</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#sobre">
-          <i class="menu__icon bi bi-person"></i>
-          <span class="menu__text">Sobre</span>
-        </a>
-      </li>
-      <li class="menu__item">
-        <a class="menu__link" href="#contato">
-          <i class="menu__icon bi bi-envelope"></i>
-          <span class="menu__text">Contato</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+        <ul class="menu menu--social">
+          <li>
+            <a href="https://github.com/MoonPower099" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/lucas-saramento-brandão" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
 
-  <!-- ======= Seção Principal ======= -->
-  <main id="home">
-    <div class="main__content1">
-      <h1><b>Projetos Divertidos &</b> Desenvolvimento Front-end</h1>
-      <p>Lucas Saramento Brandão, Camboriú-SC, Desenvolvedor Front-end.</p>
+    <!-- ===== TECHNOLOGIES ===== -->
+    <section class="technologies">
+      <h2>Conhecimento nas principais tecnologias do mercado</h2>
 
-      <ul class="menu menu--social">
+      <ul class="technologies__list">
         <li>
-          <a class="menu__link" href="https://github.com/MoonPower099" target="_blank">
-            <i class="menu__icon bi bi-github"></i>
-          </a>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            alt="HTML5"
+            class="technologies__logo"
+          />
         </li>
         <li>
-          <a class="menu__link" href="https://www.linkedin.com/in/lucas-saramento-brandão" target="_blank">
-            <i class="menu__icon bi bi-linkedin"></i>
-          </a>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            alt="CSS3"
+            class="technologies__logo"
+          />
         </li>
         <li>
-          <a class="menu__link" href="#" target="_blank">
-            <i class="menu__icon bi bi-instagram"></i>
-          </a>
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript"
+            class="technologies__logo"
+          />
         </li>
       </ul>
-    </div>
-  </main>
+    </section>
 
-  <!-- ======= Tecnologias ======= -->
-  <section class="technologies">
-    <h2>Conhecimento nas principais tecnologias do mercado</h2>
-    <ul class="technologies__list">
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/HTML5.svg" alt="Logo HTML5">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/CSS3.svg" alt="Logo CSS3">
-      </li>
-      <li class="technologies__item">
-        <img class="technologies__logo" src="assets/images/technologies/JavaScript.svg" alt="Logo JavaScript">
-      </li>
-    </ul>
-  </section>
-
-  <!-- ======= Projetos ======= -->
-  <section id="projetos" class="projects">
-    <h2>Projetos</h2>
-    <br>
-    <div class="projects__container">
-
-      <!-- Projeto 1 -->
-      <div class="projects__card">
-        <img class="card__cover" src="assets/images/projects/detona-ralph.png" alt="Capa Detona Ralph">
-        <div class="card__body">
-          <h3 class="card__title">Detona Ralph</h3>
-          <p class="card__description">Jogo com JavaScript</p>
-          <ul class="card__list">
-            <li>Sistema de Pontuação;</li>
-            <li>HTML5, CSS3 e JavaScript;</li>
-            <li>Sprites e imagens customizadas.</li>
-          </ul>
-          <div class="card__buttons">
-            <a href="https://moonpower099.github.io/DIO-Desafio-Detona-Ralph/" target="_blank">
-              <button class="btn btn--primary">
-                <span>Prévia</span>
-                <i class="bi bi-arrow-up-right"></i>
-              </button>
-            </a>
-            <a href="https://github.com/MoonPower099/DIO-Desafio-Detona-Ralph" target="_blank">
-              <button class="btn">
-                <span>Repositório</span>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projeto 2 -->
-      <div class="projects__card card--reverse">
-        <img class="card__cover" src="assets/images/projects/yugioh.png" alt="Capa Yu-Gi-Oh">
-        <div class="card__body">
-          <h3 class="card__title">Yu-Gi-Oh | Jo-ken-po Edition</h3>
-          <p class="card__description">Lógica de Programação em jogos</p>
-          <ul class="card__list">
-            <li>Gerenciamento de Estado Manual;</li>
-            <li>Funções limpas;</li>
-            <li>Organização de Código.</li>
-          </ul>
-          <div class="card__buttons">
-            <a href="https://moonpower099.github.io/js-yugioh-assets/" target="_blank">
-              <button class="btn btn--primary">
-                <span>Prévia</span>
-                <i class="bi bi-arrow-up-right"></i>
-              </button>
-            </a>
-            <a href="https://github.com/MoonPower099/js-yugioh-assets" target="_blank">
-              <button class="btn">
-                <span>Repositório</span>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Projeto 3 -->
-      <div class="projects__card">
-        <img class="card__cover" src="assets/images/projects/dmgrgn.png" alt="Capa Mundo Invertido">
-        <div class="card__body">
-          <h3 class="card__title">Mundo Invertido</h3>
-          <p class="card__description">Landing Page Stranger Things</p>
-          <ul class="card__list">
-            <li>Mudança de Temas;</li>
-            <li>HTML, CSS e JavaScript;</li>
-            <li>Formulário de Inscrição.</li>
-          </ul>
-          <div class="card__buttons">
-            <a href="https://moonpower099.github.io/semana-frontend-mundo-invertido/" target="_blank">
-              <button class="btn btn--primary">
-                <span>Prévia</span>
-                <i class="bi bi-arrow-up-right"></i>
-              </button>
-            </a>
-            <a href="https://github.com/MoonPower099/semana-frontend-mundo-invertido" target="_blank">
-              <button class="btn">
-                <span>Repositório</span>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <a href="https://github.com/MoonPower099" target="_blank">
-        <button class="btn btn--primary">
-          <span>Ver Todos os Projetos</span>
-          <i class="bi bi-arrow-up-right"></i>
-        </button>
-      </a>
-    </div>
-  </section>
-
-  <!-- ======= Sobre ======= -->
-  <section id="sobre" class="about">
-    <div class="about__content1">
-      <img class="about__photo" src="assets/images/avatar.jpg" alt="Foto de Lucas Saramento Brandão">
-      <div class="about__description">
-        <h2>Sobre mim</h2>
-        <p>Lucas Saramento Brandão. Fascinado por tecnologia. Tive contato com HTML, CSS e JavaScript. Atualmente estou cursando Engenharia de Software pela Unicesumar.</p>
-        <div class="about__icons">
-          <i class="bi bi-translate"></i>
-          <span>Inglês: Intermediário/Avançado | Espanhol: Básico</span>
-        </div>
-        <div class="description__buttons">
-          <a href="https://www.linkedin.com/in/lucas-saramento-brandão/" target="_blank">
-            <button class="btn btn--primary">
-              <span>Conecte-se Comigo</span>
-              <i class="bi bi-arrow-up-right"></i>
-            </button>
-          </a>
-          <a href="#">
-            <button class="btn">
-              <span>Currículo</span>
-            </button>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <br>
-
-    <div class="about__content2">
-      <div class="col1">
-        <div class="row1">
-          <h3>Formação</h3>
-          <h4>Estudando Engenharia de Software</h4>
-          <span>Fev 2025 - Atualmente</span>
-          <div class="about__icons">
-            <i class="bi bi-bank"></i>
-            <span>Universidade Unicesumar - Polo Camboriú</span>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="row2">
-          <h3>Experiências</h3>
-          <h4>Aluno</h4>
-          <span>Digital Innovation One. Ago - Out 2025</span>
-          <p>Em fase de aprendizado, focado na construção de uma base sólida em Desenvolvimento Front-end.</p>
-          <ul class="about__list">
-            <li>Estruturação;</li>
-            <li>Estilização;</li>
-            <li>Lógica.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col2">
-        <h3>Extras</h3>
-        <div id="accordion">
-          <div class="accordion__item active">
-            <button class="accordion__header start">
-              <span>Contribuindo em um Projeto Open Source no GitHub</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body">
-              <p>Digital Innovation One. Ago 2025. 2h.</p>
-              <p>Lab prático sobre colaboração em projetos de código aberto.</p>
-            </div>
-          </div>
-
-          <div class="accordion__item">
-            <button class="accordion__header">
-              <span>Pokédex</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body">
-              <p>Digital Innovation One. Out 2025. 1h.</p>
-              <p>Um catálogo digital de Pokémon desenvolvido com JavaScript.</p>
-            </div>
-          </div>
-
-          <div class="accordion__item">
-            <button class="accordion__header end">
-              <span>Simulador de Piano</span>
-              <i class="bi bi-caret-down-fill"></i>
-            </button>
-            <div class="accordion__body end">
-              <p>Digital Innovation One. Out 2025. 2h.</p>
-              <p>Um teclado musical virtual criado com JS Vanilla.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Contato ======= -->
-  <section id="contato" class="contact">
-    <h2>Contate-me</h2>
-    <p>Estou disponível para novos aprendizados e conexões. Contate-me via e-mail ou pelas minhas redes sociais.</p>
-
-    <ul class="menu menu--social">
-      <li>
-        <a class="menu__link" href="https://github.com/MoonPower099" target="_blank">
-          <i class="menu__icon bi bi-github"></i>
-          <span>GitHub</span>
-        </a>
-      </li>
-      <li>
-        <a class="menu__link" href="https://www.linkedin.com/in/lucas-saramento-brandão" target="_blank">
-          <i class="menu__icon bi bi-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-      </li>
-      <li>
-        <a class="menu__link" href="#" target="_blank">
-          <i class="menu__icon bi bi-instagram"></i>
-          <span>Instagram</span>
-        </a>
-      </li>
-    </ul>
-
-    <a href="mailto:lucassbbrandao123@hotmail.com">
-      <button class="btn btn--primary">
-        <span class="email">lucassbbrandao123@gmail.com</span>
-      </button>
-    </a>
-  </section>
-
-  <!-- ======= Rodapé ======= -->
-  <footer>
-    <p>
-      © 2025. Portfólio desenvolvido para fins educativos no Lab 
-      <em>"Construindo seu Portfólio Front-end do Zero"</em> da 
-      <a href="https://www.dio.me/" target="_blank">Digital Innovation One</a> 
-      por <a href="https://github.com/MoonPower099" target="_blank">Lucas Saramento Brandão</a>.
-    </p>
-  </footer>
-
-  <script src="assets/js/scripts.js"></script>
-</body>
+    <!-- ===== PROJETOS, SOBRE, CONTATO, FOOTER ===== -->
+    <!-- (mantém o resto do seu código igual daqui pra baixo) -->
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>
 
