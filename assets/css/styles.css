@@ -1,4 +1,10 @@
 /* ==============================
+   IMPORTAÇÕES DE FONTES
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600&display=swap');
+
+/* ==============================
    VARIÁVEIS GERAIS
 ================================= */
 :root {
@@ -7,7 +13,7 @@
   --background-color: #0d0d0d;
   --text-color: #cfcfcf;
   --border-color: #333333;
-  --highlight-color: #1a1a1a;
+  --highlight-color: #151515;
   --transition: 0.3s ease;
 }
 
@@ -27,7 +33,7 @@ html {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -91,6 +97,7 @@ main h1 {
   font-size: 2.5rem;
   color: var(--secondary-color);
   margin-bottom: 1rem;
+  font-family: 'League Spartan', sans-serif;
 }
 
 main p {
@@ -123,8 +130,8 @@ main p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1rem 4rem 1rem;
-  border-top: 1px solid var(--border-color);
+  padding: 2.5rem 1rem 3rem 1rem;
+  border-top: 2px solid var(--border-color);
   background: transparent;
 }
 
@@ -132,19 +139,19 @@ main p {
   font-size: 1.8rem;
   text-align: center;
   color: var(--primary-color);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .technologies__list {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
 
 .technologies__logo {
-  width: 80px;
+  width: 70px;
   transition: transform 0.3s ease;
 }
 
@@ -210,8 +217,8 @@ main p {
 }
 
 .card__list {
-  list-style: none;
-  margin-bottom: 1.5rem;
+  list-style: disc;
+  margin: 0 0 1.5rem 1.2rem;
 }
 
 .card__item {
@@ -305,7 +312,7 @@ main p {
 .about__content2 {
   display: flex;
   justify-content: space-between;
-  gap: 6rem;
+  gap: 4rem;
   margin-top: 4rem;
   flex-wrap: wrap;
 }
@@ -316,9 +323,11 @@ main p {
 }
 
 .about__content2 .col2 {
-  flex: 0 0 35%;
+  flex: 0 0 32%;
   min-width: 300px;
   margin-left: auto;
+  align-self: flex-start;
+  transform: translateX(40px);
 }
 
 .about__content2 h3 {
@@ -446,6 +455,7 @@ footer a {
 
   .about__content2 .col2 {
     margin-left: 0;
+    transform: none;
   }
 }
 
@@ -478,11 +488,4 @@ footer a {
   .technologies__logo {
     width: 60px;
   }
-}
-
-  
-  .technologies, .projects, .about {
-    padding: 10rem 15rem 4rem;
-  }
-
 }
